@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto - Cândida Teixeira</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Kalam:wght@300" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="img/logo-alura.png" alt="Logo Alura">
+        <h1 class="titulo-principal">Decodificador</h1>
+        <p class="sobre">Aqui você poderá criptografar e descriptografar seus textos</p>
+    </header>
+
+    <main>
+        <section>
+                <section class="content">
+                <section class="default" onclick="exibeCaixaTexto()">
+                    <img src="img/homem-procurando.png" alt="">
+                    <p>Clique para digitar seu texto</p>
+                </section>
+    
+                <section class="text-area hidden">
+                    <textarea tabindex="1" id="mensagem" class="texto-modificar" placeholder="Digite seu texto&#10;&#10;Apenas letras minusculas e sem acentuacao" required></textarea>
+                </section>
+            </section>            
+            
+            <section class="flex-content column">
+                <section class="flex-content flex-item row">
+                    <button tabindex="2" class="btn" onclick="encriptar()">Criptografar</button>
+                    <button tabindex="3" class="btn" onclick="decriptar()">Descriptografar</button>
+                </section>
+                <section class="flex-content flex-item row">
+                    <button tabindex="4" class="btn" onclick="copiar(this)">Copiar</button>     
+                    <button tabindex="5" class="btn" onclick="limpar()">Limpar</button>  
+                </section>          
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p class="desenvolvedor">Desenvolvido por Cândida Teixeira</p>
+        <section class="container">
+            <a target="_blank" href="https://www.linkedin.com/in/candidamwteixeira/" class="column">
+                <img class="linkedin item" src="img/linkedin.png" alt="Logotipo LinkedIn">
+                <p class="item">LinkedIn</p>
+            </a>
+            <a target="_blank" href="https://github.com/CandidaTeixeira" class="column">
+                <img class="github item" src="img/github.png" alt="Logotipo GitHub">
+                <p class="item">GitHub</p>
+            </a>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
